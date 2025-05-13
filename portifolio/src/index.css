@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: "Montserrat", "Inter", system-ui, sans-serif;
+  }
+
+  body {
+    @apply bg-lightGray dark:bg-primary text-darkGray dark:text-light m-0 min-h-screen transition-colors duration-300;
+  }
+}
+
+@layer components {
+  .nav-link {
+    @apply text-darkGray dark:text-light hover:text-accent dark:hover:text-secondary transition-colors duration-300 text-lg font-semibold;
+  }
+
+  .section-title {
+    @apply text-3xl font-bold mb-8 text-darkGray dark:text-light;
+  }
+
+  .btn-primary {
+    @apply px-6 py-3 bg-transparent border-2 border-accent dark:border-secondary text-accent dark:text-secondary rounded-md hover:bg-accent/10 dark:hover:bg-secondary/10 transition-colors duration-300;
+  }
+}
