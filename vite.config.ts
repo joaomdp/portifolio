@@ -17,4 +17,5 @@ export default defineConfig({
     emptyOutDir: true,
   },
   base: "/",
+  assetsInclude: ["**/*.pdf"],
 });
