@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "buildCommand": "npm install && npm run build",
-  "outputDirectory": "dist",
+  "buildCommand": "cd portifolio && npm install && npm run build",
+  "outputDirectory": "portifolio/dist",
   "framework": "vite"
 }
