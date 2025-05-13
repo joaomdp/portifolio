@@ -15,6 +15,19 @@ export default defineConfig({
     outDir: "dist",
     assetsDir: "assets",
     emptyOutDir: true,
+    rollupOptions: {
+      input: {
+        main: "index.html",
+      },
+      output: {
+        assetFileNames: (assetInfo) => {
+          if (assetInfo.name === "curriculo.pdf") {
+            return "curriculo.pdf";
+          }
+          return "assets/[name]-[hash][extname]";
+        },
+      },
+    },
   },
   base: "/",
   assetsInclude: ["**/*.pdf"],

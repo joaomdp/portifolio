@@ -2,5 +2,26 @@
   "version": 2,
   "buildCommand": "npm install && chmod +x node_modules/.bin/* && npm run build",
   "outputDirectory": "dist",
-  "framework": "vite"
+  "framework": "vite",
+  "rewrites": [
+    {
+      "source": "/curriculo.pdf",
+      "destination": "/curriculo.pdf"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/curriculo.pdf",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/pdf"
+        },
+        {
+          "key": "Content-Disposition",
+          "value": "inline"
+        }
+      ]
+    }
+  ]
 }
