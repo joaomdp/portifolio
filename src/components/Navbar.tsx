@@ -2,7 +2,6 @@ import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
 import { MoonIcon, SunIcon } from "@heroicons/react/24/outline";
 import { useTheme } from "../context/ThemeContext";
-import curriculoPDF from "../assets/Currículo final.pdf";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -63,7 +62,7 @@ const Navbar = () => {
               </motion.a>
             ))}
             <motion.a
-              href={curriculoPDF}
+              href="/curriculo.pdf"
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.05 }}
@@ -158,7 +157,7 @@ const Navbar = () => {
               </motion.a>
             ))}
             <motion.a
-              href={curriculoPDF}
+              href="/curriculo.pdf"
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.05 }}
