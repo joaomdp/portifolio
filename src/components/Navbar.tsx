@@ -1,11 +1,6 @@
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
-import {
-  Bars3Icon,
-  XMarkIcon,
-  MoonIcon,
-  SunIcon,
-} from "@heroicons/react/24/outline";
+import { MoonIcon, SunIcon } from "@heroicons/react/24/outline";
 import { useTheme } from "../context/ThemeContext";
 
 const Navbar = () => {
